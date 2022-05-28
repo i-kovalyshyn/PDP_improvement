@@ -25,11 +25,23 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>ContentAsset</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CspTrustedSite</name>
+	</types>
+	<types>
 		<members>bookshelf</members>
 		<name>CustomApplication</name>
 	</types>
 	<types>
-		<members>bookshelf</members>
+		<members>*</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>FlexiPage</name>
 	</types>
 	<types>
