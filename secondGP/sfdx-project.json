@@ -1,12 +1,16 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "namespace": "IHOR",
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "Bookshelf",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "packageAliases": {
+        "Bookshelf": "0Ho3X000000Kz1GSAS",
+        "Bookshelf@0.1.0-1": "04t3X000003Sl1kQAC"
     }
-  ],
-  "name": "secondGP",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "54.0"
 }
