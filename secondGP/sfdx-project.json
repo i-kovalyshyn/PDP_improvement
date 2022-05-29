@@ -11,6 +11,7 @@
     ],
     "packageAliases": {
         "Bookshelf": "0Ho3X000000Kz1GSAS",
-        "Bookshelf@0.1.0-1": "04t3X000003Sl1kQAC"
+        "Bookshelf@0.1.0-1": "04t3X000003Sl1kQAC",
+        "Bookshelf@0.1.0-2": "04t3X000003Sl1pQAC"
     }
 }
