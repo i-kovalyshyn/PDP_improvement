@@ -16,11 +16,14 @@ export default class BookApp extends LightningElement {
             })
             .catch(error => console.log(error));
     }
-    fetchBooksHandler(event){
-        this.serchQuery=event.target.value;
-        window.clearTimeout(this.timer);
-        this.timer = setTimeout(()=>{
-            this.fetchBookData();
-        },500);
+    fetchBooksHandler(event){        
+        if(!!event.target.value){
+            this.serchQuery=event.target.value;
+            window.clearTimeout(this.timer);
+            this.timer = setTimeout(()=>{
+                this.fetchBookData();
+            },500);
+        }
+        
     }
 }
