@@ -17,5 +17,5 @@ OR
 Package Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3X000003Sl1pQAC
 
 
-#Note
+#Note: -
 After success installing the Bookshelf app please wait 3 min for salesforce to review Security Policy Trusted Sites for googleapis.
