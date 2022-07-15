@@ -1,0 +1,17 @@
+img.bookImage{
+    height: 200px;
+    max-width: initial;    
+    cursor: pointer;
+}
+.content{
+    padding: 8px;
+    background-color: #ffffff;
+    border-style: ridge;
+    border-radius: 0.25rem;
+}
+.truncateLongTexts {
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

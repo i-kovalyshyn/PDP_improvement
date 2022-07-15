@@ -1,17 +1,31 @@
 {
-    "namespace": "IHOR",
-    "packageDirectories": [
+  "namespace": "BookShelf",
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "package": "Bookshelf",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT"
+    },
+    {
+      "path": "books-app",
+      "default": false,
+      "package": "Dependet Bookshelf",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "dependencies": [
         {
-            "path": "force-app",
-            "default": true,
             "package": "Bookshelf",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT"
+            "versionNumber": "0.1.0.LATEST"
         }
-    ],
-    "packageAliases": {
-        "Bookshelf": "0Ho3X000000Kz1GSAS",
-        "Bookshelf@0.1.0-1": "04t3X000003Sl1kQAC",
-        "Bookshelf@0.1.0-2": "04t3X000003Sl1pQAC"
+      ]
     }
+  ],
+  "packageAliases": {
+    "Bookshelf": "0Ho3X000000Kz1GSAS",
+    "Bookshelf@0.1.0-1": "04t3X000003Sl1kQAC",
+    "Bookshelf@0.1.0-2": "04t3X000003Sl1pQAC",
+    "Dependet Bookshelf": "0Ho3X000000PBIbSAO"
+  }
 }

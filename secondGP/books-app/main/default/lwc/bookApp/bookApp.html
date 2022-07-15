@@ -1,0 +1,44 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium">
+            <div class="slds-p-around_medium">
+                <lightning-input type="search" onchange={fetchBooksHandler} label="Search Books" value={serchQuery}>
+                </lightning-input>
+            </div>
+            <div class="slds-p-around_medium wrapper">
+                <template if:true={books}>
+                    <div class="content">
+                        <template for:each={books.items} for:item="book">
+                            <c-book-tile key={book.id} book={book} onselected={handleBookSelected}></c-book-tile>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+    <template if:true={isOpen}>
+        <c-modal onclose={closeHandler}>
+            <h1 slot="title"> <img src={selectedBook.imageLinks.thumbnail} class="slds-align_absolute-center bookImage"
+                    alt="Book picture" /></h1>
+            <form class="createForm">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <lightning-input type="date" name="DueDate__c" label="Enter Due Date" onchange={changeHandler}
+                            class="slds-m-bottom_x-small" style="display: table-row"></lightning-input>
+                    </div>
+                    <div class="slds-col">
+                        <p class="slds-text-heading_small slds-p-bottom_xx-small">Add the book to the student group for
+                            reading</p>
+                        <lightning-input type="checkbox" label="In Calendar" name="In_Calenadr__c"  checked disabled
+                            onchange={changeHandler} class="slds-m-bottom_x-small"></lightning-input>
+                    </div>
+                </div>
+            </form>
+            <div slot="footer">
+                <button class="slds-button slds-button_neutral" onclick={closeHandler}>Cancel</button>
+                <button class="slds-button slds-button_brand" onclick={createBook}>Save</button>
+            </div>
+        </c-modal>
+    </template>
+
+</template>

@@ -52,5 +52,44 @@
 		<members>*</members>
 		<name>StaticResource</name>
 	</types>
+	<types>
+		<members>Activity.In_Calenadr__c</members>
+		<members>Book__c.Authors__c</members>
+		<members>Book__c.DueDate__c</members>
+		<members>Book__c.ImageLink__c</members>
+		<members>Book__c.In_Calenadr__c</members>
+		<members>Book__c.Published_Date__c</members>
+		<members>Book__c.Thumbnail__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>Book__c</members>
+		<name>CustomObject</name>
+	</types>	
+	<types>
+		<members>*</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>PermissionSet</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Queue</name>
+	</types>
+	<types>
+		<members>Book__c.standart_user</members>
+		<name>SharingOwnerRule</name>
+	</types>
+	<types>
+		<members>Task.In_Calendar</members>
+		<name>ListView</name>
+	</types>
+	<types>
+		<members>Student</members>
+		<members>Teacher</members>
+		<name>Role</name>
+	</types>
 	<version>53.0</version>
 </Package>
