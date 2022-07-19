@@ -1,0 +1,13 @@
+c-book-tile{
+    min-width: 280px;
+    flex: 1;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+img.bookImage{
+    height: 150px;
+    max-width: initial;   
+    
+}

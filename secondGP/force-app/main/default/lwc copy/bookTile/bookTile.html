@@ -1,0 +1,15 @@
+<template>
+    <div onclick={selectBook}>
+        <div class="content">
+            <img src={book.volumeInfo.imageLinks.thumbnail} class="slds-align_absolute-center bookImage"
+                alt="Book picture" />
+            <div class="slds-text-align_left slds-text-heading_small slds-p-vertical_medium truncateLongTexts">
+                <p><strong>{book.volumeInfo.title}</strong></p></div>
+            <div class="slds-text-align_left"><strong>Published Date -</strong>{book.volumeInfo.publishedDate}
+            </div>
+            <div class="slds-text-align_left truncateLongTexts">
+                <p><strong>Authors </strong>- {book.volumeInfo.authors}</p>
+            </div>
+        </div>
+    </div>
+</template>
